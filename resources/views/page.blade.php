@@ -23,4 +23,7 @@
 {{$drink}} <br>
 @endforeach
 
+<h2>Execute PHP Function</h2>
+<p>The date is {{date(' D M, Y')}}</p>
+
 @endsection
