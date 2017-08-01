@@ -2,15 +2,15 @@
 
 @section('title', 'Page Title')
 
-@yield('sidebar')
-    
+@section('sidebar')
+    @parent
 
     <p>This is appended to the master sidebar.</p>
-
+@endsection
 
 @section('content')
-<h2>{{$name}}</h2>
-    <p>This is my body content.</p>
+<h2>{{$name}}</h2>    
+<p>This is my body content.</p>
 <h2>If Statement</h2>
 @if ($day == 'Friday')
     <p>Time to party</p>
@@ -25,5 +25,4 @@
 
 <h2>Execute PHP Function</h2>
 <p>The date is {{date(' D M, Y')}}</p>
-
 @endsection
