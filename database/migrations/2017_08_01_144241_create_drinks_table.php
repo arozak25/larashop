@@ -30,6 +30,6 @@ class CreateDrinksTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('drinks');
     }
 }
