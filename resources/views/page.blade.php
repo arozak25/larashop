@@ -17,4 +17,10 @@
 @else
     <p>Time to make money</p>
 @endif
+
+<h2>Foreach Loop</h2>
+@foreach ($drinks as $drink)
+{{$drink}} <br>
+@endforeach
+
 @endsection
